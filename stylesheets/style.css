@@ -1,0 +1,274 @@
+body {
+  background-color: rgb(8, 5, 53);
+}
+
+.stl1 {
+  position: absolute;
+  margin-top: 2.86vw;
+  margin-left: -6.73vw;
+  width: 54.27vw;
+  height: 76.98vw;
+  z-index: 1;
+}
+
+.stl1 {
+  animation-name: stalactite1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation: stalactite1 1.3s forwards;
+}
+
+@keyframes stalactite1 {
+  0% {
+    margin-top: -41.67vw;
+  }
+  100% {
+    margin-top: -4.17vw;
+  }
+}
+
+.h1 {
+  position: absolute;
+  margin-top: 4.22vw;
+  margin-left: 49.74vw;
+  width: 44.11vw;
+  height: 16.2vw;
+}
+
+.river {
+  position: absolute;
+  margin-top: 34.79vw;
+  margin-left: 0vw;
+  width: 209.06vw;
+  height: 24.38vw;
+  overflow: hidden;
+  animation: riverflow 10s infinite linear;
+}
+
+@keyframes riverflow {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+.stalactite2 {
+  position: absolute;
+  margin-top: 69.11vw;
+  margin-left: 70.26vw;
+  width: 30.1vw;
+  height: 52.03vw;
+}
+
+.stalactite2 {
+  animation-name: stalactite22;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation: stalactite22 1.3s forwards;
+}
+
+@keyframes stalactite22 {
+  0% {
+    margin-left: 69vw;
+  }
+  100% {
+    margin-left: 70.26vw;
+  }
+}
+
+.puddle {
+  position: absolute;
+  margin-top: 94.97vw;
+  margin-left: 5.05vw;
+  width: 27.14vw;
+  height: 4.27vw;
+  opacity: 60%;
+}
+
+.rain {
+  position: absolute;
+  margin-top: 66.11vw;
+  margin-left: 9.32vw;
+  width: 14.43vw;
+  height: 24.06vw;
+}
+
+.rain {
+  animation: rain11 1.2s infinite;
+}
+
+@keyframes rain11 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.portal {
+  position: absolute;
+  margin-top: 108.49vw;
+  margin-left: 18.13vw;
+  width: 64.17vw;
+  height: 64.17vw;
+}
+
+.portal {
+  animation: breath 3s infinite;
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+    opacity: 50%;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 50%;
+  }
+}
+
+.flight {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  margin-top: 183.42vw;
+  font-size: 360%;
+  overflow: hidden;
+  color: white;
+  font-family: exterior-light;
+  animation: movesight 6s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes movesight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+.flight:hover {
+  animation-play-state: paused;
+}
+
+.hands1 {
+  position: absolute;
+  margin-top: 196.61vw;
+  margin-left: 21.09vw;
+  width: 65.21vw;
+  height: 17.4vw;
+}
+
+.hands1 {
+  animation: float1 2s infinite;
+}
+
+@keyframes float1 {
+  0% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
+
+.hands2 {
+  position: absolute;
+  margin-top: 219.95vw;
+  margin-left: 3.13vw;
+  width: 22.34vw;
+  height: 31.56vw;
+}
+
+.hands2 {
+  animation: float1 2s infinite;
+}
+
+.hands3 {
+  position: absolute;
+  margin-top: 219.32vw;
+  margin-left: 75.26vw;
+  width: 20.83vw;
+  height: 32.5vw;
+}
+
+.hands3 {
+  animation: float1 2s infinite;
+}
+
+.fire {
+  position: absolute;
+  margin-top: 224.22vw;
+  margin-left: 40.68vw;
+  width: 20.73vw;
+  height: 31.56vw;
+}
+
+.fire {
+  transition: transform 0.2s;
+}
+
+.fire:hover {
+  transform: scale(1.1);
+}
+
+.human1 {
+  position: absolute;
+  margin-top: 243.3vw;
+  margin-left: 24.01vw;
+  width: 11.35vw;
+  height: 13.96vw;
+}
+
+.human1:hover {
+  transform: rotate(20deg);
+}
+
+.human2 {
+  position: absolute;
+  margin-top: 243.91vw;
+  margin-left: 68.44vw;
+  width: 7.81vw;
+  height: 13.49vw;
+}
+
+.human2:hover {
+  transform: rotate(-20deg);
+}
+
+.me {
+  position: absolute;
+  margin-top: 270.27vw;
+  margin-left: 18.92vw;
+  font-size: 335%;
+  color: white;
+  font-family: exterior-light;
+}
+
+.mecircles {
+  position: absolute;
+  margin-top: 265.42vw;
+  margin-left: 21.51vw;
+  width: 65.99vw;
+  height: 9.38vw;
+}
+
+.mecircles:hover {
+  opacity: 0;
+}
